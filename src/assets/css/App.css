@@ -1,0 +1,181 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+
+
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 20px;
+    /* Adjust the height as needed */
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+    display: inline-block;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: #ccc;
+    /* Adjust the color as needed */
+    width: 10px;
+    /* Adjust the width as needed */
+    margin-left: 10px;
+    /* Adjust the margin as needed */
+}
+
+
+
+
+
+.with-arrow {
+    position: relative;
+}
+
+.with-arrow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    /* Adjust the right distance to control the arrow appearance */
+    bottom: 0;
+    border-right: 20px solid transparent;
+    /* Adjust the width of the arrow */
+    border-left: 20px solid #007bff;
+    /* Set the color to primary color */
+    border-width: 10px 20px 10px 0;
+    transform: translateY(-50%);
+}
+
+
+.with-arrow {
+    position: relative;
+}
+
+.with-arrow:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    /* Adjust the right distance to control the arrow appearance */
+    border-style: solid;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #007bff transparent transparent;
+    transform: translateY(-50%);
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* For Webkit browsers (such as Chrome/Safari) */
+::-webkit-scrollbar {
+    width: 7px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Set the color of the scrollbar thumb on hover */
+}
+
+
+.button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(117, 79, 254);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgb(116, 98, 180);
+    color: #070707;
+    transform: translateY(-7px);
+}
+
+.button-secondary {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(189, 189, 191);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-secondary:hover {
+    background-color: #fff;
+    box-shadow: 0px 15px 20px rgb(189, 189, 191);
+    color: #070707;
+    transform: translateY(-7px);
+}
